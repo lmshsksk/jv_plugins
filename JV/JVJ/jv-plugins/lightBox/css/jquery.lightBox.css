@@ -1,0 +1,43 @@
+/*
+ * lightBox
+ *
+ * Copyright (c) 2014 jay
+ * Licensed under the MIT license.
+ */
+
+
+ /*-----lightbox 效果-----------*/
+#popBox{
+    /* background-color:#4d4d4d; */
+    position:absolute;
+    z-index:99999;
+    display:none;
+    /*transition:top 0.5s ease 0s;*/
+}
+#boxModel{
+    background-color:#000;
+    display:none;
+    position:absolute;
+    z-index:99998;
+    left:0;
+    top:0;
+}
+
+#popBox .closeBtn {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    text-indent: -999px;
+    overflow: hidden;
+    top: -15px; 
+    right: -12px;
+    height: 45px;
+    width: 53px;
+    opacity: 0.8;
+    transition:opacity 0.5s ease 0s;
+    background:url(http://blizzcon.nos.netease.com/1/images/media/light_video.png) -197px 0 no-repeat;
+}
+#popBox .closeBtn:hover{
+    opacity: 1;
+    background-position: -197px -45px;
+}

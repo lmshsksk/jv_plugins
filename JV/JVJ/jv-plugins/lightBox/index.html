@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>lightBox Test Suite</title>
+
+<link rel="stylesheet" href="../../src/css/reset.css">
+<link rel="stylesheet" href="../../src/css/base.css">
+<link rel="stylesheet" href="../../src/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="css/jquery.lightBox.css">
+<style>
+	#popBox .big_image{
+		border: 3px solid #014566;
+	}
+</style>
+</head>
+<body>
+<button class="btn btn-primary">点击弹层</button>
+
+
+  <script src="../../plugins/jquery-1.7.2.min.js"></script>
+  <script src="../../plugins/jquery.namespace.js"></script>
+  <script src="../../src/js/core.js"></script>         
+
+
+ <script src="js/jquery.lightBox.js"></script>
+<script>
+$(function(){
+	$(".btn").click(function(){
+	  new JV.lightBox('<img class="big_image" src="http://blizzcon.nos.netease.com/2/media/pic/I1DNBUVN7RRN1411172126040.jpg" style="width:1000px;">',{
+
+	  	model:true
+	  });		
+	})
+   
+          
+})    
+</script>
+</body>
+</html>
