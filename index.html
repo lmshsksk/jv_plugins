@@ -125,7 +125,28 @@
 			<p class="module-description" title="mousewheel鼠标滚轮">
 				mousewheel鼠标滚轮
 			</p>
-		</div>																
+		</div>
+		<div class="module" style="border-left-color: rgba(255, 119, 138, 0.65);">
+			<a href="http://codemirror.net/" target="_blank" class="module-name" title="codemirror">codemirror</a>
+			<span class="module-version"></span>
+			<p class="module-description" title="codemirror代码语法高亮">
+				codemirror代码语法高亮
+			</p>
+		</div>
+		<div class="module" style="border-left-color: rgba(255, 119, 138, 0.65);">
+			<a href="javascript:void(0);" target="_blank" class="module-name" title="md5">md5</a>
+			<span class="module-version"></span>
+			<p class="module-description" title="字符转md5码">
+				字符转md5码
+			</p>
+		</div>
+		<div class="module" style="border-left-color: rgba(255, 119, 138, 0.65);">
+			<a href="https://lodash.com/" target="_blank" class="module-name" title="lodash">lodash</a>
+			<span class="module-version"></span>
+			<p class="module-description" title="lodash">
+				lodash库
+			</p>
+		</div>																						
 	</div>
 <!-- 	<div class="modules modules-utility">
 	<div class="module" style="border-left-color: rgba(29, 206, 181, 0.65);">
@@ -599,5 +620,25 @@
 	</h2>
 	<div class="modules modules-alipay"></div>
 </div>
+
+
+
+
+<!--高速版，加载速度快，使用前需测试页面的兼容性-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrr6TkbP',
+    conf = 'prod_3b1442843a69b4add3f2524fce483489';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>    
 </body>
 </html>
