@@ -1,0 +1,191 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>拖拽-a jv-fe minisite</title>
+<link rel="stylesheet" href="../../src/css/reset.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../src/css/base.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="worldcup2014.css" type="text/css" media="all" />
+	
+
+<style>
+body{
+    min-height: 1000px;
+}
+#cup_eight{
+    width: 545px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+</head>
+<body>
+
+<ul class="op5 clearfix" id="cup_eight">
+                            <li class="first"><strong class="icon_ball droppable"><!-- <span class="icon_co_b icon_co_Mexico_b"></span> --></strong>冠军</li>
+                            <li><strong class="icon_ball droppable"></strong>亚军</li>
+                            <li><strong class="icon_ball droppable"></strong>季军</li>
+                            <li><strong class="icon_ball droppable"></strong>殿军</li>
+                            <li><strong class="icon_ball droppable"></strong>第5名</li>
+                            <li><strong class="icon_ball droppable"></strong>第6名</li>
+                            <li><strong class="icon_ball droppable"></strong>第7名</li>
+                            <li><strong class="icon_ball droppable"></strong>第8名</li>
+                    </ul>
+
+<div class="op_qi_b clearfix">
+                            <ul class="op_qi_w clearfix droppable" id="cup_country">
+                                <li><span data-co="Brazil" class="icon_co icon_co_Brazil"></span><span class="co_txt">巴西</span></li>
+                                <li class="co_r"><span data-co="Croatia" class="icon_co icon_co_Croatia"></span><span class="co_txt">克罗地亚</span></li>
+                                <li><span data-co="Spain" class="icon_co icon_co_Spain"></span><span class="co_txt">西班牙</span></li>
+                                <li class="co_r"><span data-co="Netherlands" class="icon_co icon_co_Netherlands" style=""></span><span class="co_txt">荷兰</span></li>
+                                <li><span data-co="Columbia" class="icon_co icon_co_Columbia" style=""></span><span class="co_txt">哥伦比亚</span></li>
+                                <li class="co_r"><span data-co="Greece" class="icon_co icon_co_Greece" style=""></span><span class="co_txt">希腊</span></li>
+                                <li><span data-co="Uruguay" class="icon_co icon_co_Uruguay"></span><span class="co_txt">乌拉圭</span></li>
+                                <li><span data-co="Costa" class="icon_co icon_co_Costa"></span><span class="co_txt">哥斯达黎加</span></li>
+
+                                <li><span data-co="Mexico" class="icon_co icon_co_Mexico"></span><span class="co_txt">墨西哥</span></li>
+                                <li class="co_r"><span data-co="Cameroon" class="icon_co icon_co_Cameroon"></span><span class="co_txt">喀麦隆</span></li>
+                                <li><span data-co="Chile" class="icon_co icon_co_Chile"></span><span class="co_txt">智利</span></li>
+                                <li class="co_r"><span data-co="Australia" class="icon_co icon_co_Australia"></span><span class="co_txt">澳大利亚</span></li>
+                                <li><span data-co="Cote" class="icon_co icon_co_Cote"></span><span class="co_txt">科特迪瓦</span></li>
+                                <li class="co_r"><span data-co="Japan" class="icon_co icon_co_Japan"></span><span class="co_txt">日本</span></li>
+                                <li><span data-co="England" class="icon_co icon_co_England" style=""></span><span class="co_txt">英格兰</span></li>
+                                <li><span data-co="Italy" class="icon_co icon_co_Italy" style=""></span><span class="co_txt">意大利</span></li>
+
+                                <li><span data-co="Switzerland" class="icon_co icon_co_Switzerland" style=""></span><span class="co_txt">瑞士</span></li>
+                                <li class="co_r"><span data-co="Ecuador" class="icon_co icon_co_Ecuador" style=""></span><span class="co_txt">厄瓜多尔</span></li>
+                                <li><span data-co="Argentina" class="icon_co icon_co_Argentina" style=""></span><span class="co_txt">阿根廷</span></li>
+                                <li class="co_r"><span data-co="Bosnia" class="icon_co icon_co_Bosnia" style=""></span><span class="co_txt">波黑</span></li>
+                                <li><span data-co="Germany" class="icon_co icon_co_Germany" style=""></span><span class="co_txt">德国</span></li>
+                                <li class="co_r"><span data-co="Portugal" class="icon_co icon_co_Portugal"></span><span class="co_txt">葡萄牙</span></li>
+                                <li><span data-co="Belgium" class="icon_co icon_co_Belgium"></span><span class="co_txt">比利时</span></li>
+                                <li><span data-co="Algeria" class="icon_co icon_co_Algeria" style=""></span><span class="co_txt">阿尔及利亚</span></li>
+
+                                <li><span data-co="France" class="icon_co icon_co_France"></span><span class="co_txt">法国</span></li>
+                                <li class="co_r"><span data-co="Honduras" class="icon_co icon_co_Honduras"></span><span class="co_txt">洪都拉斯</span></li>
+                                <li><span data-co="Iran" class="icon_co icon_co_Iran"></span><span class="co_txt">伊朗</span></li>
+                                <li class="co_r"><span data-co="Nigeria" class="icon_co icon_co_Nigeria"></span><span class="co_txt">尼日利亚</span></li>
+                                <li><span data-co="Ghana" class="icon_co icon_co_Ghana"></span><span class="co_txt">加纳</span></li>
+                                <li class="co_r"><span data-co="USA" class="icon_co icon_co_USA"></span><span class="co_txt">美国</span></li>
+                                <li><span data-co="Russia" class="icon_co icon_co_Russia"></span><span class="co_txt">俄罗斯</span></li>
+                                <li><span data-co="Korea" class="icon_co icon_co_Korea"></span><span class="co_txt">韩国</span></li>                                                                                                                                                              
+                            </ul>
+                    </div>
+    <script type="text/javascript" src="../../plugins/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../../plugins/jquery.draggable.js"></script>
+    <script type="text/javascript" src="../../plugins/jquery.droppable.js"></script>
+    <script>
+        $(function(){
+var countryData={
+  "Argentina":"阿根廷",
+  "Australia":"澳大利亚",
+  "Brazil":"巴西",
+  "Belgium":"比利时",
+  "Bosnia":"波黑",
+  "Germany":"德国",
+  "Russia":"俄罗斯",
+  "Ecuador":"厄瓜多尔",
+  "France":"法国",
+  "Columbia":"哥伦比亚",
+  "Costa":"哥斯达黎加",
+  "Korea":"韩国",
+  "Netherlands":"荷兰",
+  "Honduras":"洪都拉斯",
+  "Ghana":"加纳",
+  "Cameroon":"喀麦隆",
+  "Cote":"科特迪瓦",
+  "Croatia":"克罗地亚",
+  "USA":"美国",
+  "Mexico":"墨西哥",
+  "Nigeria":"尼日利亚",
+  "Portugal":"葡萄牙",
+  "Japan":"日本",
+  "Switzerland":"瑞士",
+  "Uruguay":"乌拉圭",
+  "Spain":"西班牙",
+  "Greece":"希腊",
+  "Iran":"伊朗",
+  "Italy":"意大利",
+  "England":"英格兰",
+  "Chile":"智利"
+};
+
+            $('#cup_country .icon_co').draggable({
+                revert: true,
+                proxy: 'clone',
+                onBeforeDrag:function(e){
+                    if ($(this).hasClass('icon_circle')) {
+                        e.stopPropagation();
+                        return false;
+                    }
+                },
+                onStopDrag:function(e){
+
+                    
+                }
+            });         
+
+
+        $('#cup_eight .icon_ball').droppable({
+            onDragOver: function(e, source) {
+                $(source).parent().parent().css({"position":"relative","z-index":999}); 
+                //$(this).addClass('over');
+            },
+            onDragLeave: function() {
+                //$(this).removeClass('over');
+            },
+            onDrop: function(e, source) {
+                //$(this).removeClass('over');
+                $(source).parent().parent().css({"position":"relative","z-index":999});
+                $(source).parent().parent().siblings().css({"position":"relative","z-index":998});
+                if ($(source).hasClass('icon_co_b')) {//debugger;
+                    var country=$(this).children().attr("data-co"),
+                        country_s=$(source).attr("data-co");
+                    
+                    if(country!=country_s){//如果不是本身的队伍
+                        $(this).html($(source));
+                        $('#cup_country .icon_co[data-co="'+country+'"]').removeClass('icon_circle');
+                    }
+                    
+                } else {
+                    $(source).addClass('icon_circle');
+                    var country=$(source).attr("data-co");
+/*                  var index=cls.lastIndexOf("_");
+                    var country=cls.substring(index+1);*/
+                    var c = $(source).clone().removeAttr("class").addClass('icon_co_b icon_co_'+country+'_b')
+                    .attr("data-country",country)
+                    .attr("title",countryData[country])
+                    .css({"position":"absolute","top":"7px","left":"7px"});
+
+                    //如果是直接小图拖过去盖住大图
+                    var t_child=$(this).find(".icon_co_b").length;
+                    if(t_child){
+                        var country_name=$(this).children().attr("data-co");
+                        $('#cup_country .icon_co[data-co="'+country_name+'"]').removeClass('icon_circle');
+                    }
+                    $(this).empty().append(c);
+                    c.draggable({
+                        revert: true
+                    });
+                }
+            }
+        });
+        $('#cup_country').droppable({
+            accept: '.icon_co_b',
+            onDragEnter: function(e, source) {
+                $(source).addClass('trash');
+            },
+            onDragLeave: function(e, source) {
+                $(source).removeClass('trash');
+            },
+            onDrop: function(e, source) {
+                var co=$(source).attr("data-co");
+                $('#cup_country .icon_co[data-co="'+co+'"]').removeClass('icon_circle');
+                $(source).remove();
+            }
+        });
+        })
+    </script>
+</body>
+</html>

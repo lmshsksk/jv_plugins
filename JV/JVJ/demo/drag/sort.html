@@ -1,0 +1,104 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Change Items Order</title>
+        <script type="text/javascript" src="../../plugins/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="../../plugins/jquery.droppable.js"></script>
+        <script type="text/javascript" src="../../plugins/jquery.draggable.js"></script>
+    </head>
+    <body>
+
+    <div style="margin:20px 0;"></div>
+    <ul style="margin:0;padding:0;margin-left:10px;">
+    <li class="drag-item">Drag 1</li>
+    <li class="drag-item">Drag 2</li>
+    <li class="drag-item">Drag 3</li>
+    <li class="drag-item">Drag 4</li>
+    <li class="drag-item">Drag 5</li>
+    <li class="drag-item">Drag 6</li>
+    <li class="indicator">>></li>
+    </ul>
+    <style type="text/css">
+    .drag-item{
+    list-style-type:none;
+    display:block;
+    padding:5px;
+    border:1px solid #ccc;
+    margin:2px;
+    width:300px;
+    background:#fafafa;
+    color:#444;
+    }
+    .indicator{
+    /* position:absolute; */
+    font-size:9px;
+    width:300px;
+    height:20px;
+    display:none;
+    padding:5px;
+    margin:2px;
+    color:red;
+    border:1px dashed #ccc;
+    }
+    </style>
+    <script>
+    $(function(){
+    var indicator = $('.indicator');
+                $('.drag-item').each(function(k,v){
+                    $(v).data("index",k);        
+                })
+
+    $('.drag-item').draggable({
+        revert:true,
+        deltaX:0,
+        deltaY:0,     
+        axis:"v",
+        onStartDrag:function(e,source){
+            indicator.css({
+            display:'block'
+            });
+
+            $(this).before(indicator);  
+            
+        },
+        onStopDrag:function(e,source){
+            indicator.hide();
+        }      
+    })
+    $('.drag-item').droppable({
+
+
+        onDragOver:function(e,source){
+        indicator.css({
+            display:'block'
+        });
+
+            var next=$(this).next();
+
+            if(next.hasClass("indicator")){
+                $(this).before(indicator);
+                 
+            }else{
+                $(this).after(indicator);
+            }
+          
+        }
+    });
+
+    $('.indicator').droppable({
+            onDrop: function(e, source) {
+                $(source).insertAfter(this);
+                indicator.hide();
+                $('.drag-item').each(function(k,v){
+                    $(v).data("index",k);        
+                })
+
+            }
+    })
+
+    });
+    </script>
+     
+    </body>
+    </html>
