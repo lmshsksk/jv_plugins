@@ -8,7 +8,7 @@
 
 **以下为真机测试:**
 
->Mozilla/5.0(Linux;Android 4.4.2;zh-cn;SAMSUNG-SCH-I959 Build/KOT49H) AppleWebKit/537.36(KHTML,like Gecko)Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36
+>Mozilla/5.0(Linux;Android 4.4.2;zh-cn;SCH-I959 Build/KOT49H) AppleWebKit/537.36(KHTML,like Gecko)Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36
 
 >Mozilla/5.0(Linux;Android 4.1.2;zh-cn;GT-N7108 Build/JZO54K) AppleWebKit/533.1(KHTML,like Gecko)Version/4.0 UCBrowser/9.9.4.484 U3/0.8.0 Mobile Safari/533.1
 
