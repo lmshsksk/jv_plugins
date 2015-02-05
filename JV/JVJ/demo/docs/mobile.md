@@ -6,9 +6,9 @@
 
 - pad或手机上获取信息格式一般如下，因浏览器的差异输出的信息会有所不同：
 
-**以下为真机测试:**
+**以下为真机测试（列举两个）:**
 
->Mozilla/5.0(Linux;Android 4.4.2;zh-cn;SAMSUNG-SCH-I959 Build/KOT49H) AppleWebKit/537.36(KHTML,like Gecko)Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36
+>Mozilla/5.0(Linux;Android 4.4.2;zh-cn;SCH-I959 Build/KOT49H) AppleWebKit/537.36(KHTML,like Gecko)Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36
 
 >Mozilla/5.0(Linux;Android 4.1.2;zh-cn;GT-N7108 Build/JZO54K) AppleWebKit/533.1(KHTML,like Gecko)Version/4.0 UCBrowser/9.9.4.484 U3/0.8.0 Mobile Safari/533.1
 
@@ -18,7 +18,7 @@
 
 [http://www.zytrax.com/tech/web/mobile_ids.html](http://www.zytrax.com/tech/web/mobile_ids.html)
 
-手机信息详情（列出所有手机型号等相关信息）
+- 手机信息详情（列出所有手机型号等相关信息）
 
 [http://www.gsmarena.com/](http://www.gsmarena.com/)
 
