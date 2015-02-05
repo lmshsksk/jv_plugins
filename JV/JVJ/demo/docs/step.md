@@ -6,6 +6,8 @@
 
 - from UI:UED
 
+- from PM/Jay:update
+
 
 
 ##邮件模板（带背景色的为变更的内容）
