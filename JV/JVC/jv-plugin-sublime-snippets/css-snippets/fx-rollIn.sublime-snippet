@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+/* fx-rollIn */
+.fx-rollIn{
+-webkit-animation:rollIn 1s .2s ease both;
+animation:rollIn 1s .2s ease both;}
+@-webkit-keyframes rollIn{
+0%{opacity:0;
+-webkit-transform:translateX(-100%) rotate(-120deg)}
+100%{opacity:1;
+-webkit-transform:translateX(0px) rotate(0deg)}
+}
+@keyframes rollIn{
+0%{opacity:0;
+transform:translateX(-100%) rotate(-120deg)}
+100%{opacity:1;
+transform:translateX(0px) rotate(0deg)}
+}
+]]></content>
+	<tabTrigger>fx-rollIn</tabTrigger>
+	<scope>source.css</scope>
+	<description>左边翻转进入</description>
+</snippet>

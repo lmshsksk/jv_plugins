@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-flipOutX */
+.fx-flipOutX{
+-webkit-animation:flipOutX 1s .2s ease both;
+animation:flipOutX 1s .2s ease both;}
+@-webkit-keyframes flipOutX{
+0%{-webkit-transform:perspective(400px) rotateX(0deg);
+opacity:1}
+100%{-webkit-transform:perspective(400px) rotateX(90deg);
+opacity:0}
+}
+@keyframes flipOutX{
+0%{transform:perspective(400px) rotateX(0deg);
+opacity:1}
+100%{transform:perspective(400px) rotateX(90deg);
+opacity:0}
+}
+
+]]></content>
+	<tabTrigger>fx-flipOutX</tabTrigger>
+	<scope>source.css</scope>
+	<description>X轴淡出</description>
+</snippet>

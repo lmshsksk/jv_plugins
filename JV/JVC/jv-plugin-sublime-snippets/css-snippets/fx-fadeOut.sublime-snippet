@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeOut */
+.fx-fadeOut{
+-webkit-animation:fadeOut 1s .2s ease both;
+animation:fadeOut 1s .2s ease both;}
+@-webkit-keyframes fadeOut{
+0%{opacity:1}
+100%{opacity:0}
+}
+@keyframes fadeOut{
+0%{opacity:1}
+100%{opacity:0}
+}
+
+]]></content>
+	<tabTrigger>fx-fadeOut</tabTrigger>
+	<scope>source.css</scope>
+	<description>淡出</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-rotateOut */
+.fx-rotateOut{
+-webkit-animation:rotateOut 1s .2s ease both;
+animation:rotateOut 1s .2s ease both;}
+@-webkit-keyframes rotateOut{
+0%{-webkit-transform:rotate(0);
+opacity:1}
+100%{-webkit-transform:rotate(-90deg);
+opacity:0}
+}
+@keyframes rotateOut{
+0%{transform:rotate(0);
+opacity:1}
+100%{transform:rotate(-90deg);
+opacity:0}
+}
+
+]]></content>
+	<tabTrigger>fx-rotateOut</tabTrigger>
+	<scope>source.css</scope>
+	<description>旋转退出</description>
+</snippet>

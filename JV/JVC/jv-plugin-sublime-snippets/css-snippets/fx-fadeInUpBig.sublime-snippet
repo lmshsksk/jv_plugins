@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeInUpBig */
+.fx-fadeInUpBig{
+-webkit-animation:fadeInUpBig 1s .2s ease both;
+animation:fadeInUpBig 1s .2s ease both;}
+@-webkit-keyframes fadeInUpBig{
+0%{opacity:0;
+-webkit-transform:translateY(2000px)}
+100%{opacity:1;
+-webkit-transform:translateY(0)}
+}
+@keyframes fadeInUpBig{
+0%{opacity:0;
+transform:translateY(2000px)}
+100%{opacity:1;
+transform:translateY(0)}
+}
+
+]]></content>
+	<tabTrigger>fx-fadeInUpBig</tabTrigger>
+	<scope>source.css</scope>
+	<description>底部淡入</description>
+</snippet>

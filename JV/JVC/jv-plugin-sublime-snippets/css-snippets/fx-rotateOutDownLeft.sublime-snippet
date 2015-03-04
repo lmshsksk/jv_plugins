@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* fx-rotateOutDownLeft */
+.rotateOutDownLeft{
+-webkit-animation:rotateOutDownLeft 1s .2s ease both;
+animation:rotateOutDownLeft 1s .2s ease both;}
+@-webkit-keyframes rotateOutDownLeft{
+0%{-webkit-transform-origin:left bottom;
+-webkit-transform:rotate(0);
+opacity:1}
+100%{-webkit-transform-origin:left bottom;
+-webkit-transform:rotate(-90deg);
+opacity:0}
+}
+@keyframes rotateOutDownLeft{
+0%{transform-origin:left bottom;
+transform:rotate(0);
+opacity:1}
+100%{transform-origin:left bottom;
+transform:rotate(-90deg);
+opacity:0}
+}
+
+]]></content>
+	<tabTrigger>fx-rotateOutDownLeft</tabTrigger>
+	<scope>source.css</scope>
+	<description>右下旋转退出</description>
+</snippet>

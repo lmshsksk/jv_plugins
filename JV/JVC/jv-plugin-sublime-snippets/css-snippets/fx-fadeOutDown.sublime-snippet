@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeOutDown */
+.fadeOutDown{
+-webkit-animation:fadeOutDown 1s .2s ease both;
+animation:fadeOutDown 1s .2s ease both;}
+@-webkit-keyframes fadeOutDown{
+0%{opacity:1;
+-webkit-transform:translateY(0)}
+100%{opacity:0;
+-webkit-transform:translateY(20px)}
+}
+@keyframes fadeOutDown{
+0%{opacity:1;
+transform:translateY(0)}
+100%{opacity:0;
+transform:translateY(20px)}
+}
+]]></content>
+	<tabTrigger>fx-fadeOutDown</tabTrigger>
+	<scope>source.css</scope>
+	<description>向下淡出</description>
+</snippet>

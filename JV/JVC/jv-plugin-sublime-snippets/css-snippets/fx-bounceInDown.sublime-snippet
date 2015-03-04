@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+/* fx-bounceInDown */
+.fx-bounceInDown{
+-webkit-animation:bounceInDown 1s .2s ease both;
+animation:bounceInDown 1s .2s ease both;}
+@-webkit-keyframes bounceInDown{
+0%{opacity:0;
+-webkit-transform:translateY(-2000px)}
+60%{opacity:1;
+-webkit-transform:translateY(30px)}
+80%{-webkit-transform:translateY(-10px)}
+100%{-webkit-transform:translateY(0)}
+}
+@keyframes bounceInDown{
+0%{opacity:0;
+transform:translateY(-2000px)}
+60%{opacity:1;
+transform:translateY(30px)}
+80%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+]]></content>
+	<tabTrigger>fx-bounceInDown</tabTrigger>
+	<scope>source.css</scope>
+	<description>上方弹跳进入</description>
+</snippet>

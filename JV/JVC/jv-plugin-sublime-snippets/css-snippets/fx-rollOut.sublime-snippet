@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-rollOut */
+.fx-rollOut{
+-webkit-animation:rollOut 1s .2s ease both;
+animation:rollOut 1s .2s ease both;}
+@-webkit-keyframes rollOut{
+0%{opacity:1;
+-webkit-transform:translateX(0px) rotate(0deg)}
+100%{opacity:0;
+-webkit-transform:translateX(100%) rotate(120deg)}
+}
+@keyframes rollOut{
+0%{opacity:1;
+transform:translateX(0px) rotate(0deg)}
+100%{opacity:0;
+transform:translateX(100%) rotate(120deg)}
+}
+
+]]></content>
+	<tabTrigger>fx-rollOut</tabTrigger>
+	<scope>source.css</scope>
+	<description>翻转右边退出</description>
+</snippet>

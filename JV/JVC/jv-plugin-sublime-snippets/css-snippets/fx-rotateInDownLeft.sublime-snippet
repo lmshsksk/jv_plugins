@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* fx-rotateInDownLeft */
+.fx-rotateInDownLeft{
+-webkit-animation:rotateInDownLeft 1s .2s ease both;
+animation:rotateInDownLeft 1s .2s ease both;}
+@-webkit-keyframes rotateInDownLeft{
+0%{-webkit-transform-origin:left bottom;
+-webkit-transform:rotate(-90deg);
+opacity:0}
+100%{-webkit-transform-origin:left bottom;
+-webkit-transform:rotate(0);
+opacity:1}
+}
+@keyframes rotateInDownLeft{
+0%{transform-origin:left bottom;
+transform:rotate(-90deg);
+opacity:0}
+100%{transform-origin:left bottom;
+transform:rotate(0);
+opacity:1}
+}
+
+]]></content>
+	<tabTrigger>fx-rotateInDownLeft</tabTrigger>
+	<scope>source.css</scope>
+	<description>左上顺时针旋转进入</description>
+</snippet>

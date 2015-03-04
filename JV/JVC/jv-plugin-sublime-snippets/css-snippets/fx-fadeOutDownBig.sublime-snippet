@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeOutDownBig */
+.fadeOutDownBig{
+-webkit-animation:fadeOutDownBig 1s .2s ease both;
+animation:fadeOutDownBig 1s .2s ease both;}
+@-webkit-keyframes fadeOutDownBig{
+0%{opacity:1;
+-webkit-transform:translateY(0)}
+100%{opacity:0;
+-webkit-transform:translateY(20px)}
+}
+@keyframes fadeOutDownBig{
+0%{opacity:1;
+transform:translateY(0)}
+100%{opacity:0;
+transform:translateY(20px)}
+}
+
+]]></content>
+	<tabTrigger>fx-fadeOutDownBig</tabTrigger>
+	<scope>source.css</scope>
+	<description>底部淡出</description>
+</snippet>

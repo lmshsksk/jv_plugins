@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+/* fx-shake */
+.fx-shake{
+-webkit-animation:shake 1s .2s ease both;
+animation:shake 1s .2s ease both;}
+@-webkit-keyframes shake{
+0%,100%{-webkit-transform:translateX(0);}
+10%,30%,50%,70%, 90%{-webkit-transform:translateX(-10px);}
+20%,40%,60%,80%{-webkit-transform:translateX(10px);}
+}
+@keyframes shake{
+0%,100%{transform:translateX(0);}
+10%,30%,50%,70%, 90%{transform:translateX(-10px);}
+20%,40%,60%,80%{transform:translateX(10px);}
+}
+
+]]></content>
+	<tabTrigger>fx-shake</tabTrigger>
+	<scope>source.css</scope>
+	<description>摇摆</description>
+</snippet>

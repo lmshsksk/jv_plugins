@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeInRight */
+.fx-fadeInRight{
+-webkit-animation:fadeInRight 1s .2s ease both;
+animation:fadeInRight 1s .2s ease both;}
+@-webkit-keyframes fadeInRight{
+0%{opacity:0;
+-webkit-transform:translateX(20px)}
+100%{opacity:1;
+-webkit-transform:translateX(0)}
+}
+@keyframes fadeInRight{
+0%{opacity:0;
+transform:translateX(20px)}
+100%{opacity:1;
+transform:translateX(0)}
+}
+
+]]></content>
+	<tabTrigger>fx-fadeInRight</tabTrigger>
+	<scope>source.css</scope>
+	<description>右边淡入</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeOutRightBig */
+.fx-fadeOutRightBig{
+-webkit-animation:fadeOutRightBig 1s .2s ease both;
+animation:fadeOutRightBig 1s .2s ease both;}
+@-webkit-keyframes fadeOutRightBig{
+0%{opacity:1;
+-webkit-transform:translateX(0)}
+100%{opacity:0;
+-webkit-transform:translateX(2000px)}
+}
+@keyframes fadeOutRightBig{
+0%{opacity:1;
+transform:translateX(0)}
+100%{opacity:0;
+transform:translateX(2000px)}
+}
+]]></content>
+	<tabTrigger>fx-fadeOutRightBig</tabTrigger>
+	<scope>source.css</scope>
+	<description>页面右边淡出</description>
+</snippet>

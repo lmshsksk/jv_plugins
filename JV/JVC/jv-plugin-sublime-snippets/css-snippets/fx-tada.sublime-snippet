@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+/* fx-tada */
+.fx-tada{
+-webkit-animation:tada 1s .2s ease both;
+animation:tada 1s .2s ease both;}
+@-webkit-keyframes tada{
+0%{-webkit-transform:scale(1)}
+10%,20%{-webkit-transform:scale(0.9) rotate(-3deg)}
+30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg)}
+40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg)}
+100%{-webkit-transform:scale(1) rotate(0)}
+}
+@keyframes tada{
+0%{transform:scale(1)}
+10%,20%{transform:scale(0.9) rotate(-3deg)}
+30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}
+40%,60%,80%{transform:scale(1.1) rotate(-3deg)}
+100%{transform:scale(1) rotate(0)}
+}
+
+]]></content>
+	<tabTrigger>fx-tada</tabTrigger>
+	<scope>source.css</scope>
+	<description>秋千</description>
+</snippet>

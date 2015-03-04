@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeOutRight */
+.fx-fadeOutRight{
+-webkit-animation:fadeOutRight 1s .2s ease both;
+animation:fadeOutRight 1s .2s ease both;}
+@-webkit-keyframes fadeOutRight{
+0%{opacity:1;
+-webkit-transform:translateX(0)}
+100%{opacity:0;
+-webkit-transform:translateX(20px)}
+}
+@keyframes fadeOutRight{
+0%{opacity:1;
+transform:translateX(0)}
+100%{opacity:0;
+transform:translateX(20px)}
+}
+
+]]></content>
+	<tabTrigger>fx-fadeOutRight</tabTrigger>
+	<scope>source.css</scope>
+	<description>右边淡出</description>
+</snippet>

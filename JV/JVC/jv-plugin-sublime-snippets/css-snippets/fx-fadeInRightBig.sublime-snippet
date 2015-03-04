@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeInRightBig */
+.fx-fadeInRightBig{
+-webkit-animation:fadeInRightBig 1s .2s ease both;
+animation:fadeInRightBig 1s .2s ease both;}
+@-webkit-keyframes fadeInRightBig{
+0%{opacity:0;
+-webkit-transform:translateX(2000px)}
+100%{opacity:1;
+-webkit-transform:translateX(0)}
+}
+@keyframes fadeInRightBig{
+0%{opacity:0;
+transform:translateX(2000px)}
+100%{opacity:1;
+transform:translateX(0)}
+}
+
+]]></content>
+	<tabTrigger>fx-fadeInRightBig</tabTrigger>
+	<scope>source.css</scope>
+	<description>页面右边淡入</description>
+</snippet>

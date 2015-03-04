@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* fx-flipInX */
+.fx-flipInX{
+-webkit-animation:flipInX 1s .2s ease both;
+animation:flipInX 1s .2s ease both;}
+@-webkit-keyframes flipInX{
+0%{-webkit-transform:perspective(400px) rotateX(90deg);
+opacity:0}
+40%{-webkit-transform:perspective(400px) rotateX(-10deg)}
+70%{-webkit-transform:perspective(400px) rotateX(10deg)}
+100%{-webkit-transform:perspective(400px) rotateX(0deg);
+opacity:1}
+}
+@keyframes flipInX{
+0%{transform:perspective(400px) rotateX(90deg);
+opacity:0}
+40%{transform:perspective(400px) rotateX(-10deg)}
+70%{transform:perspective(400px) rotateX(10deg)}
+100%{transform:perspective(400px) rotateX(0deg);
+opacity:1}
+}
+
+]]></content>
+	<tabTrigger>fx-flipInX</tabTrigger>
+	<scope>source.css</scope>
+	<description>X轴淡入</description>
+</snippet>

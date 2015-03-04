@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+/* fx-flash */
+.fx-flash{
+-webkit-animation:flash 1s .2s ease both;
+animation:flash 1s .2s ease both;}
+@-webkit-keyframes flash{
+0%,50%,100%{opacity: 1;}
+25%,75%{opacity: 0;}
+}
+@keyframes flash{
+0%,50%,100%{opacity: 1;}
+25%,75%{opacity: 0;}
+}
+
+]]></content>
+	<tabTrigger>fx-flash</tabTrigger>
+	<scope>source.css</scope>
+	<description>闪光灯效果</description>
+</snippet>

@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* fx-bounceInRight */
+.fx-bounceInRight{
+-webkit-animation:bounceInRight 1s .2s ease both;
+animation:bounceInRight 1s .2s ease both;}
+@-webkit-keyframes bounceInRight{
+0%{opacity:0;
+-webkit-transform:translateX(2000px)}
+60%{opacity:1;
+-webkit-transform:translateX(-30px)}
+80%{-webkit-transform:translateX(10px)}
+100%{-webkit-transform:translateX(0)}
+}
+@keyframes bounceInRight{
+0%{opacity:0;
+transform:translateX(2000px)}
+60%{opacity:1;
+transform:translateX(-30px)}
+80%{transform:translateX(10px)}
+100%{transform:translateX(0)}
+}
+
+]]></content>
+	<tabTrigger>fx-bounceInRight</tabTrigger>
+	<scope>source.css</scope>
+	<description>右边弹跳进入</description>
+</snippet>

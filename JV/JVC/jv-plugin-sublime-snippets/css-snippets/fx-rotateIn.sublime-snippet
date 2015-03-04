@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* fx-rotateIn */
+.fx-rotateIn{
+-webkit-animation:rotateIn 1s .2s ease both;
+animation:rotateIn 1s .2s ease both;}
+@-webkit-keyframes rotateIn{
+0%{-webkit-transform-origin:center center;
+-webkit-transform:rotate(-200deg);
+opacity:0}
+100%{-webkit-transform-origin:center center;
+-webkit-transform:rotate(0);
+opacity:1}
+}
+@keyframes rotateIn{
+0%{transform-origin:center center;
+transform:rotate(-200deg);
+opacity:0}
+100%{transform-origin:center center;
+transform:rotate(0);
+opacity:1}
+}
+
+]]></content>
+	<tabTrigger>fx-rotateIn</tabTrigger>
+	<scope>source.css</scope>
+	<description>旋转进入</description>
+</snippet>

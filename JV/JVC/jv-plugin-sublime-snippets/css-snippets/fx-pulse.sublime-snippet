@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+/* fx-pulse */
+.fx-pulse{
+-webkit-animation:pulse 1s .2s ease both;
+animation:pulse 1s .2s ease both;}
+@-webkit-keyframes pulse{
+0%{-webkit-transform:scale(1)}
+50%{-webkit-transform:scale(1.1)}
+100%{-webkit-transform:scale(1)}
+}
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.1)}
+100%{transform:scale(1)}
+}
+
+]]></content>
+	<tabTrigger>fx-pulse</tabTrigger>
+	<scope>source.css</scope>
+	<description>脉冲</description>
+</snippet>

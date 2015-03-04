@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* fx-rotateInUpRight */
+.fx-rotateInUpRight{
+-webkit-animation:rotateInUpRight 1s .2s ease both;
+animation:rotateInUpRight 1s .2s ease both;}
+@-webkit-keyframes rotateInUpRight{
+0%{-webkit-transform-origin:right bottom;
+-webkit-transform:rotate(-90deg);
+opacity:0}
+100%{-webkit-transform-origin:right bottom;
+-webkit-transform:rotate(0);
+opacity:1}
+}
+@keyframes rotateInUpRight{
+0%{transform-origin:right bottom;
+transform:rotate(-90deg);
+opacity:0}
+100%{transform-origin:right bottom;
+transform:rotate(0);
+opacity:1}
+}
+
+]]></content>
+	<tabTrigger>fx-rotateInUpRight</tabTrigger>
+	<scope>source.css</scope>
+	<description>左下旋转进入</description>
+</snippet>

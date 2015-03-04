@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeInLeft */
+.fadeInLeft{
+-webkit-animation:fadeInLeft 1s .2s ease both;
+animation:fadeInLeft 1s .2s ease both;}
+@-webkit-keyframes fadeInLeft{
+0%{opacity:0;
+-webkit-transform:translateX(-20px)}
+100%{opacity:1;
+-webkit-transform:translateX(0)}
+}
+@keyframes fadeInLeft{
+0%{opacity:0;
+transform:translateX(-20px)}
+100%{opacity:1;
+transform:translateX(0)}
+}
+
+]]></content>
+	<tabTrigger>fx-fadeInLeft</tabTrigger>
+	<scope>source.css</scope>
+	<description>左边淡入</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+/* fx-fadeInUp */
+.fx-fadeInUp{
+-webkit-animation:fadeInUp 1s .2s ease both;
+animation:fadeInUp 1s .2s ease both;}
+@-webkit-keyframes fadeInUp{
+0%{opacity:0;
+-webkit-transform:translateY(20px)}
+100%{opacity:1;
+-webkit-transform:translateY(0)}
+}
+@keyframes fadeInUp{
+0%{opacity:0;
+transform:translateY(20px)}
+100%{opacity:1;
+transform:translateY(0)}
+}
+]]></content>
+	<tabTrigger>fx-fadeInUp</tabTrigger>
+	<scope>source.css</scope>
+	<description>下方淡入</description>
+</snippet>
