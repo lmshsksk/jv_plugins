@@ -10,6 +10,7 @@ WebM由Google提出，是一个开放、免费的媒体文件格式。WebM 影�
 
 WebM在同等大小下不仅清晰度比MP4要清楚很多，而且加载速度也要比MP4快。
 
+
 > **使用:**
 
 ![WebM兼容性](https://raw.githubusercontent.com/jv-fe/jv-fe.github.com/master/JV/JVC/google-image-compress/webm-use.png)
@@ -123,5 +124,7 @@ isparta: [http://isparta.github.io/](http://isparta.github.io/)
 参考资料：
 
 [http://isux.tencent.com/introduction-of-webp.html](http://isux.tencent.com/introduction-of-webp.html "ISUX")
+
+[https://developers.google.com/events/io/sessions/325741299](https://developers.google.com/events/io/sessions/325741299)
 
 [https://developers.google.com/speed/webp/](https://developers.google.com/speed/webp/)
