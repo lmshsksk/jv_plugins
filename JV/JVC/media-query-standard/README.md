@@ -46,9 +46,11 @@
 
 实际过渡变化就2种，所以这类只要2个尺寸。
 
+![](https://raw.githubusercontent.com/jv-fe/jv-fe.github.com/master/JV/JVC/media-query-standard/heroes.jpg)
+
 风暴英雄--新闻页面：[http://us.battle.net/heroes/en/blog/](http://us.battle.net/heroes/en/blog/)
 
-变化众多的，就要提供5~6中。
+变化众多的，就要提供4~5种。
 
 
 **主要取决于设计给予前端的“自由度”是多大，如果希望前端来把控页面过渡展示，就可以给3个尺寸，如果希望各个过渡区间都能按照设计要求来的，就要给到4~6个尺寸。**
@@ -80,8 +82,12 @@
 > 相关资料:
 
 经典设计案例：[http://mediaqueri.es/](http://mediaqueri.es/)
+
 工具和组织：[http://froont.com/](http://froont.com/)
+
 “响应式之父” Ethan Marcotte 主页：[http://ethanmarcotte.com/](http://ethanmarcotte.com/)
+
 使命召唤：[https://www.callofduty.com/](https://www.callofduty.com/)
+
 overwatch：[http://us.battle.net/overwatch/en/](http://us.battle.net/overwatch/en/)
 三星：
