@@ -90,4 +90,5 @@
 使命召唤：[https://www.callofduty.com/](https://www.callofduty.com/)
 
 overwatch：[http://us.battle.net/overwatch/en/](http://us.battle.net/overwatch/en/)
-三星：
+
+三星：[http://www.samsung.com/cn/home](http://www.samsung.com/cn/home)
