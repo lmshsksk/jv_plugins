@@ -1,11 +1,11 @@
 ﻿/*!
- * Base On jQuery JavaScript Library v1.6.2
+ * Base On jQuery JavaScript Library v1.7.2
  * http://jquery.com/
- * Libs:LIN Slider
- * Copyright 2014, Ronbinson Lin
+ * Copyright 2015, Ronbinson Lin
  * http://jquery.org/license
  *
- * Date: 2014.11.7
+ * Versions 2.1
+ * Date: 2015.3.31
  */
 $.ns("JV");
 (function($) {
@@ -24,6 +24,7 @@ $.ns("JV");
 			effect: "ScreenCling", //ScreenCling,ScreenTouch,ScreenTouchGo
 			speed: 200, //滚动速度快慢
 			scale: "n", //是否有滚动缩放
+			rotation:"y", //是否开启横屏提示
 			callback: function(index) {
 
 			}
@@ -50,6 +51,9 @@ $.ns("JV");
 				case "ScreenTouchGo":
 					self.ctrlScreenTouchGo();
 					break;
+			}
+			if(self.cfg.rotation=="y"){
+				self.changeRotationWarning();
 			}
 		},
 		//类似整屏滚动
@@ -596,6 +600,35 @@ $.ns("JV");
 				"-webkit-transform": "translateY(" + w_h + "px)",
 				"transform": "translateY(" + w_h + "px)"
 			})
+		},
+		//横屏时弹出提示
+		changeRotationWarning: function(callback) {
+			var html = '<div class="rotation_warning" style="background:#666; position: absolute; top:0; left:0; height:100%; width:100%; z-index:9999;"><div style="text-align:center;color:#fff; font-size:1em; margin:20% auto;">为了保证浏览效果，我们建议在竖屏下观看。</div></div>';
+
+			function orientationChange() {
+				switch (window.orientation) {
+					case 0:
+						$(".rotation_warning").remove();
+						break;　　
+					case -90:
+						if (callback) callback();
+						else $("body").append(html);
+						break;　　
+					case 90:
+						if (callback) callback();
+						else $("body").append(html);
+						break;　　
+					case 180:
+						$("#rotation_warning").remove();
+						//alert("风景模式 180,screen-width: " + screen.width + "; screen-height:" + screen.height);
+						break;
+				};
+			};
+			// 添加事件监听
+			addEventListener('load', function() {
+				orientationChange();
+				window.onorientationchange = orientationChange;
+			});
 		}
 	}
 

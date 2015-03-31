@@ -9,19 +9,21 @@
 
 > **html 代码结构**
 
-    <div class="main">
-		<div class="content" id="content" data-index="1">
-			<section class="screen" id="screen_1">
+```html
+<div class="main">
+	<div class="content" id="content" data-index="1">
+		<section class="screen" id="screen_1">
 
-			</section>
-			<section class="screen" id="screen_2">
+		</section>
+		<section class="screen" id="screen_2">
 
-			</section>
-			<section class="screen" id="screen_3">
+		</section>
+		<section class="screen" id="screen_3">
 
-			</section>
-		</div>
+		</section>
 	</div>
+</div>
+```
 
 这里需要注意的是js组件主要通过 **id="screen_1"** 来控制不同场景的切换，所以html中的id必须按照顺序书写，如：
  id="screen_1"， id="screen_2"， id="screen_3"
@@ -34,6 +36,7 @@
 
 页面具体实施：
 
+```html
     <section class="screen" id="screen_3">
 		<div class="demo_icon pos_5 ani_200ms green" data-class="fadeInLeft">A</div>
 		<div class="demo_icon pos_2 ani_600ms blue" data-class="fadeInRight">B</div>
@@ -43,7 +46,7 @@
 			<img src="img/arrow.png">
 		</div>
 	</section>
-
+```
 
 
 > **JS 代码**
@@ -53,12 +56,16 @@ new JV.phoneSlide($("#content"), {
 	effect: "ScreenCling", //ScreenCling,ScreenTouch,ScreenTouchGo
 	speed: 200, //滚动速度快慢
 	scale: "n", //是否有滚动缩放 "n" or "y"
+	rotation:"y", //是否开启横屏提示
 	callBack: function(index) { //滚屏组件
 		if (index == 1) { //是否是第一页
 		}
 	}
 });
 ```
+
+横屏提示功能 rotation:"y"
+
 
 > **css代码**
 

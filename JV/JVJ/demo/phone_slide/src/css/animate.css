@@ -84,6 +84,90 @@
         transform:translateY(0);
     }
 }
+/* fadeOutRight */
+@-webkit-keyframes fadeOutRight{
+    0%{
+        opacity: 1;
+        -webkit-transform:translateX(0px);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform:translateX(30px);
+    }
+}
+@keyframes fadeOutRight{
+    0%{
+        opacity: 1;
+        transform:translateX(30px);
+    }
+    100%{
+        opacity: 0;
+        transform:translateX(0);
+    }
+}
+/* fadeOutLeft */
+@-webkit-keyframes fadeOutLeft{
+    0%{
+        opacity: 1;
+        -webkit-transform:translateX(0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform:translateX(-30px);
+    }
+}
+@keyframes fadeOutLeft{
+    0%{
+        opacity: 1;
+        transform:translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform:translateX(-30px);
+    }
+}
+/* fadeOutTop */
+@-webkit-keyframes fadeOutTop{
+    0%{
+        opacity: 1;
+        -webkit-transform:translateY(0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform:translateY(-30px);
+    }
+}
+@keyframes fadeOutTop{
+    0%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform:translateY(-30px);
+    }
+}
+/* fadeOutBottom */
+@-webkit-keyframes fadeOutBottom{
+    0%{
+        opacity: 1;
+        -webkit-transform:translateY(0);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform:translateY(30px);
+    }
+}
+@keyframes fadeOutBottom{
+    0%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform:translateY(30px);
+    }
+}
 /* page_arrow */
 @-webkit-keyframes page_arrow{
     from {
@@ -120,6 +204,22 @@
 .fadeInBottom {
     -webkit-animation:fadeInBottom .4s 0s ease-out both;
     animation:fadeInBottom .4s 0s ease-out both;
+}
+.fadeOutRight {
+    -webkit-animation:fadeOutRight .4s 0s ease-out both;
+    animation:fadeOutRight .4s 0s ease-out both;
+}
+.fadeOutLeft {
+    -webkit-animation:fadeOutLeft .4s 0s ease-out both;
+    animation:fadeOutLeft .4s 0s ease-out both;
+}
+.fadeOutTop {
+    -webkit-animation:fadeOutTop .4s 0s ease-out both;
+    animation:fadeOutTop .4s 0s ease-out both;
+}
+.fadeOutBottom {
+    -webkit-animation:fadeOutBottom .4s 0s ease-out both;
+    animation:fadeOutBottom .4s 0s ease-out both;
 }
 .ani_200ms {
     -webkit-animation-delay:.2s;

@@ -81,6 +81,9 @@ section.hidden {
   background: #020e40;
 }
 
+.opacity1 {
+  opacity: 1;
+}
 .demo_icon {
   height: 3em;
   width: 3em;
