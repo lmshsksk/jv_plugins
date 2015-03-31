@@ -24,7 +24,7 @@ $.ns("JV");
 			effect: "ScreenCling", //ScreenCling,ScreenTouch,ScreenTouchGo
 			speed: 200, //滚动速度快慢
 			scale: "n", //是否有滚动缩放
-			rotation:"y", //是否开启横屏提示
+			rotation: "y", //是否开启横屏提示
 			callback: function(index) {
 
 			}
@@ -52,7 +52,7 @@ $.ns("JV");
 					self.ctrlScreenTouchGo();
 					break;
 			}
-			if(self.cfg.rotation=="y"){
+			if (self.cfg.rotation == "y") {
 				self.changeRotationWarning();
 			}
 		},
@@ -619,16 +619,13 @@ $.ns("JV");
 						else $("body").append(html);
 						break;　　
 					case 180:
-						$("#rotation_warning").remove();
+						$(".rotation_warning").remove();
 						//alert("风景模式 180,screen-width: " + screen.width + "; screen-height:" + screen.height);
 						break;
 				};
 			};
 			// 添加事件监听
-			addEventListener('load', function() {
-				orientationChange();
-				window.onorientationchange = orientationChange;
-			});
+			window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", orientationChange, false);
 		}
 	}
 
